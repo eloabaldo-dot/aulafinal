@@ -26,15 +26,19 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="SmartTrip AI" />
+    <meta property="og:url" content="https://smarttrip.app" />
     <meta property="og:title" content="SmartTrip AI - Assistente Inteligente de Planejamento de Viagens" />
     <meta
       property="og:description"
       content="Crie roteiros de viagem sob medida em segundos. Integração de inteligência artificial generativa com dados meteorológicos e geográficos reais."
     />
     <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:image:alt" content="SmartTrip AI - Planejamento Inteligente de Viagens" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@smarttrip" />
+    <meta name="twitter:creator" content="@smarttrip" />
     <meta name="twitter:title" content="SmartTrip AI - Assistente Inteligente de Planejamento de Viagens" />
     <meta
       name="twitter:description"
@@ -42,9 +46,44 @@
     />
     <meta name="twitter:image" content="/favicon.svg" />
 
+    <!-- Recursos PWA & Mobile Web App -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SmartTrip" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="https://smarttrip.app" />
+
     <!-- Favicon & Identidade Visual -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para SEO Avançado -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SmartTrip AI",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "description": "Assistente inteligente de planejamento de viagens com inteligência artificial, previsão meteorológica e pontos de interesse factuais.",
+        "url": "https://smarttrip.app",
+        "inLanguage": "pt-BR",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        },
+        "featureList": [
+          "Geração de Roteiros Inteligentes com Gemini",
+          "Previsão Meteorológica Integrada",
+          "Mapeamento de Pontos de Interesse (POIs)",
+          "Curadoria Editorial Humana",
+          "Isolamento Multi-usuário Seguro"
+        ]
+      }
+    </script>
 
     <!-- Otimização de Carregamento de Fontes Tipográficas -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
