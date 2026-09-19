@@ -1,0 +1,6 @@
+{
+  "name": "SmartTrip AI",
+  "description": "Assistente inteligente de viagens com roteiros personalizados por IA, exploração de destinos e colaboração em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
