@@ -23,7 +23,8 @@
     "test:itinerary": "tsx test-itinerary-contract.ts",
     "test:html": "tsx test-html-integrity.ts",
     "test:gemini": "tsx test-gemini-service.ts",
-    "test:lifecycle": "tsx test-trip-lifecycle.ts"
+    "test:lifecycle": "tsx test-trip-lifecycle.ts",
+    "test:sharing": "tsx test-trip-sharing.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

@@ -76,8 +76,29 @@ export type TripStatus =
   | 'arquivada'
   | 'excluida';
 
+export type TripVisibility = 'private' | 'link' | 'public';
+
+export interface PublicTripDTO {
+  id: string;
+  destination: {
+    name: string;
+    country: string;
+    latitude: number;
+    longitude: number;
+  };
+  title?: string;
+  imageUrl: string;
+  startDate: string;
+  endDate: string;
+  totalDays: number;
+  visibility: TripVisibility;
+  shareToken?: string;
+  itinerary: DayItinerary[];
+}
+
 export interface Trip {
   id: string;
+  userId?: string;
   destination: string;
   country: string;
   imageUrl: string;
@@ -85,16 +106,25 @@ export interface Trip {
   endDate: string;
   totalDays: number;
   status: TripStatus;
+  visibility?: TripVisibility;
+  shareToken?: string;
   isFavorite?: boolean;
   weatherSummary: {
     avgTempMax: number;
     avgTempMin: number;
     conditions: string;
     fetchedAt?: string;
+    needsRevalidation?: boolean;
   };
   itinerary: DayItinerary[];
   createdAt?: string;
   updatedAt?: string;
   deletedAt?: string;
   clonedFromTripId?: string;
+  sourceTripId?: string;
+  revalidationRequired?: {
+    weather: boolean;
+    places: boolean;
+    reason?: string;
+  };
 }

@@ -1,5 +1,5 @@
 import { UserPreferences, UserProfileDocument } from './auth';
-import { VacationPeriod, Trip, DayItinerary, ItineraryActivity, TripStatus } from './mvp';
+import { VacationPeriod, Trip, DayItinerary, ItineraryActivity, TripStatus, TripVisibility } from './mvp';
 
 export interface CreateVacationInput {
   title: string;
@@ -27,6 +27,8 @@ export interface CreateTripInput {
   endDate: string;   // YYYY-MM-DD
   totalDays: number;
   status: TripStatus;
+  visibility?: TripVisibility;
+  shareToken?: string;
   isFavorite?: boolean;
   weatherSummary?: {
     avgTempMax: number;
@@ -49,6 +51,8 @@ export interface UpdateTripInput {
   endDate?: string;
   totalDays?: number;
   status?: TripStatus;
+  visibility?: TripVisibility;
+  shareToken?: string;
   isFavorite?: boolean;
   weatherSummary?: {
     avgTempMax: number;
